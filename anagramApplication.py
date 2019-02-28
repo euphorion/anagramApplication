@@ -66,9 +66,9 @@ def main():
             key *= charToPrimes[sym]
         if key in table:
             result = ",".join(table[key])
-            print("%s,%s" % (time() - start_time, result))
+            print("%s,%s" % ((time() - start_time)*1000, result))
         else:
-            print("%s" % (time() - start_time))
+            print("%s" % (time() - start_time)*1000)
     
 if __name__ == "__main__":
     main()
